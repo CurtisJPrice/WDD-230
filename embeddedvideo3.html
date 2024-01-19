@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Handbrake Embed Test</title>
+<style>
+video::cue {
+    background: rgba(0,0,0,0.3);
+    color: #eee;
+    font-size: 1rem;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px #000;
+}
+</style>
+</head>
+
+<body>
+<h1>Video Embed Test (5:15 minute video)</h1>
+<video controls width="1280" height="720">
+    <source src="media/lazyload1a-720h-15f-64k.mp4" type="video/mp4">
+    <source src="media/lazyLoad1a.webm" type="video/webm">
+    <track label="English" kind="subtitles" srclang="en" src="media/lazyload1a-en.vtt" default />
+    <track label="Spanish" kind="subtitles" srclang="en" src="media/lazyload1a-es.vtt" />
+</video>
+<h2>Initial Page Load before playing</h2>
+<p>2 requests | 0.0042 MB Transferred | 0.0098 MB resources</p>
+<h2>Total Page Load After playing</h2>
+<p>4 requests | 14.9 MB Transferred | 14.9 MB resources</p>
+<h2>Process to add cpations.</h2>
+<ol>
+    <li>Upload to youTube</li>
+    <li>Publish and wait for transcription to happen.</li>
+    <li>Click the pencil icon (details)</li>
+    <li>Click the "Subtitles" button on the left side of the screen</li>
+    <li>Click 3 dots > Download > .srt</li>
+    <li>Open <a href="https://www.happyscribe.com/subtitle-tools/convert-srt-to-vtt">this website</a> and convert the .srt to .webvtt</li>
+</ol>
+</body>
+
+</html>
