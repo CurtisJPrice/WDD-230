@@ -3,57 +3,91 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curtis J. Price - WDD 230 - Web Frontend Development</title>
-    <meta name="description" content="Curtis Price's WDD230 homepage">
-    <meta name="author" content="Curtis Price">
-    <link href="styles/base.css" rel="stylesheet">
-    <link href="styles/larger.css" rel="stylesheet">
+    <meta name="description" content="WDD 230, Curtis J. Price, Oregon State Chamber of Commerce.">
+    <meta name="author" content="Curtis J. Price">
+    <meta property="og:title" content="Curtis J. Price - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://gui1986.github.io/wdd230/">
+    <meta property="og:url" content="https://gui1986.github.io/wdd230/">
+    <meta property="og:description" content="WDD 230, Curtis J. Price, Oregon State Chamber of Commerce.">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header>
-    <img src="images/WIN_20220428_10_56_25_Pro.jpg" alt="Curtis">
-    <span>WDD230 Sample Assignments - Curtis J. Price</span>
-    </header>
-    <nav>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="Chamber/Chamber-site01.html">Chamber</a></li>
-    <li><a href="#">Site Plan</a></li>
-    <li><a href="#">Form</a></li>
-    </nav>
-    <main>
-    <h1>WDD 230: Web Frontend Development</h1>
-    <section>
-        <h2>Learning Activities</h2>
-        <ul>
-        <li>Week 1 <a href="Week01/holygrail.html">Holy Grail</a><a href="Week01/media-query.html"> Media Query</a></li>
-        <li>Week 2 <a href="Week02/design.html">Design</a><a href="Week02/bom.html"> Book of Mormon</a></li>
-        <li>Week 3 <a href="#">Example</a></li>
-        <li>Week 4 <a href="#">Example</a></li>
-        <li>Week 5 <a href="#">Example</a></li>
-        <li>Week 6 <a href="#">Example</a></li>
-        <li>Week 7 <a href="#">Example</a></li>
-        </ul>
-    
-    </section>
-    <section class="card">
-        <h2>Information</h2>
-        <ul>
-        <li>Weather <a href="Weather">Example</a></li>
-        <li>Number of Visits <a href="Number of Visits">Example</a></li>
-        </ul>
-    </section>
+    <div id="mode">
+        🔆/🌒
+    </div>
+    <div class="container">
+        <header>
+            <img src="images/WIN_20220428_10_56_25_Pro.jpg" alt="Curtis_profile_image">
+            <h2 class="identName">Curtis J. Price</h2>
+        </header>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/chamber/index.html">Chamber</a></li>
+                <li><a href="chamber-site-plan.html">Site Plan</a></li>
+                <li><a href="form">Form</a></li>
+            </ul>
+            <div class="heroImage">
+                <picture>
+                    <!-- Mobile view image (up to 400px) -->
+                    <source media="(max-width: 100px)" srcset="images/temple-mobile.webp 1x, images/temple-mobile-2x.webp 2x, images/temple-mobile.jpg 1x, images/temple-mobile-2x.jpg 2x">
+                    <!-- Larger view image (up to 960px in landscape orientation) -->
+                    <source media="(min-width: 401px) and (max-width: 960px) and (orientation: landscape)" srcset="images/temple-large.webp 1x, images/temple-large-2x.webp 2x">
+                    <!-- Fallback image for browsers that do not support the <picture> element or the specified media queries -->
+                        <img src="images/temple-large.webp" alt="Latter-day Temple">
+                    <span>Portland, Oregon Temple</span>
+                </picture>
+            </div>
+        </nav>
+    </div>
+    <main class="parent">
+        <h2 class="studClass">WDD 230: Web Frontend Development</h2>
+        <section class="card01">
+            <h3>Learning Activities</h3>
+            <ul>
+                <li><strong>Week 01:</strong><a href="week01"> Setup, Review, and Media Queries</a></li>
+                <li><Strong>Week 02:</Strong><a href="week02"> Responsive Design</a></li>
+                <li><Strong>Week 03:</Strong><a href="week03"> Responsive Images</a></li>
+                <li><Strong>Week 04:</Strong><a href="#"></a></li>
+                <li><Strong>Week 05:</Strong><a href="#"></a></li>
+                <li><Strong>Week 06:</Strong><a href="#"></a></li>
+            </ul>
+        </section>
+        <section class="card02">
+            <h3>Information</h3>
+            <h5>Eagle Creek, Oregon</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, quis magnam esse beatae fuga quod repudiandae, atque accusantium ducimus. </p>
+        </section>
     </main>
+
+    <div class="grid-container">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123864.18053477512!2d-46.729214!3d-23.473293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a9e37581575%3A0xd604b35b40d7d2f7!2sS%C3%A3o%20Paulo%2C%20State%20of%20S%C3%A3o%20Paulo%2C%20Brazil!5e0!3m2!1sen!2sus!4v1641669504115!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+    
+
+
     <footer>
-        <p>© Copyrights <span id="year"></span> by CodexWorld. All rights reserved. Curtis j. Price, Oregon State USA</p>
-        <script type="text/javascript">
-            function lastModified() {
-                document.write(document.lastModified);
-            }
-                lastModified();
-        </script>
+        <div class="copyright">&copy; <span id="currentYear"></span> Copyright © Brigham Young University-Idaho | All rights
+            reserved | Curtis J. Price | Eagle Creek, Oregon
+            <div id="lastModified"></div>
+        </div>
+        <img class="flag" src="images/brazil-flag.png" alt="Brazilian_flag">
     </footer>
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/menuHam.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    
 </body>
 </html>

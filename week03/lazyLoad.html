@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load Images</title>
+    <meta name="author" content="Marcos Guimarães">
+    <link rel="stylesheet" href="styles/lazyLoad.css">
+</head>
+<body>
+    <header>
+        <h1>Lazy Load Images</h1>
+    </header>
+
+    <main>
+        <picture>
+            <source srcset="https://via.placeholder.com/400x600.png" media="(min-width: 600px)">
+            <img src="https://via.placeholder.com/400x600.png" alt="Image 1" loading="lazy">
+        </picture>
+
+        <picture>
+            <source srcset="https://via.placeholder.com/400x600.png" media="(min-width: 600px)">
+            <img src="https://via.placeholder.com/400x600.png" alt="Image 2" loading="lazy">
+        </picture>
+
+        <picture>
+            <source srcset="https://via.placeholder.com/400x600.png" media="(min-width: 600px)">
+            <img src="https://via.placeholder.com/400x600.png" alt="Image 3" loading="lazy">
+        </picture>
+
+        <picture>
+            <source srcset="https://via.placeholder.com/400x600.png" media="(min-width: 600px)">
+            <img src="https://via.placeholder.com/400x600.png" alt="Image 4" loading="lazy">
+        </picture>
+
+        <picture>
+            <source srcset="https://via.placeholder.com/400x600.png" media="(min-width: 600px)">
+            <img src="https://via.placeholder.com/400x600.png" alt="Image 5" loading="lazy">
+        </picture>
+
+        <picture>
+            <source srcset="https://via.placeholder.com/400x600.png" media="(min-width: 600px)">
+            <img src="https://via.placeholder.com/400x600.png" alt="Image 6" loading="lazy">
+        </picture>
+    </main>
+
+    <footer>
+        <div class="copyright">&copy; <span id="currentYear"></span> Copyright © Brigham Young University-Idaho | All rights
+            reserved | Marcos Guimarães | São Paulo/Brazil
+            <div id="lastModified"></div>
+        </div>
+        <img class="flag" src="/images/brazil-flag.png" alt="Brazilian_flag">
+    </footer>>
+
+    <script src="/scripts/getDates.js"></script>
+</body>
+</html>
+
+
+<div>
+    <picture>
+        <source srcset="https://via.placeholder.com/400x600.png">
+        <img src="https://via.placeholder.com/400x600.png" alt="Image1" loading="lazy">
+    </picture>
+    <picture>
+        <source srcset="https://via.placeholder.com/400x600.png">
+        <img src="https://via.placeholder.com/400x600.png" alt="Image2" loading="lazy">
+    </picture>
+</div>

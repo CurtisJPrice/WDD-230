@@ -1,4 +1,8 @@
 @media screen and (max-width: 820px) {
+
+    h1 {
+        font-size: 15px;
+    }
     nav ul {
         flex-direction: column;
         align-items: center;
@@ -29,8 +33,7 @@
 
     .card01,
     .card02,
-    .card03,
-    .card04 {
+    .card03 {
         width: 100%;
         margin-left: 0;
     }
@@ -59,7 +62,6 @@
         margin-left: 0;
         
     }
-
 }
 
 @media (min-width: 820px) {
@@ -73,6 +75,7 @@
 	.studClass {
 		font-size: 2rem;
 		text-align: center;
+
 	}
 
 	#menu {
@@ -91,26 +94,41 @@
 	.stuff {
 		margin: 1rem auto;
 	}
-}
 
-@media only screen and (max-width: 400px) {
-    .heroImage div {
-        font-size: 14px; 
-        padding: 15px 15px 15px 15px; 
-        margin: 10px; 
-        margin-left: 10px;
-    }
 }
 
 @media only screen and (max-width: 600px) {
-    .heroImage span {
-        font-size: 18px; 
-        padding: 10px; 
+    .weather-section {
+        width: 100%;
+        float: none;
     }
 
-    .grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    .whetherInformation {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        font-size: 112px;
+    }
+    
+    .copyright {
+        font-size: 11px;
+    }
+
+}
+
+@media only screen and (max-width: 790px) {
+    .SpotLight {
         width: 100%;
-        margin-left: 0;
+        float: none;
+        padding: 0;
+    }
+
+    .chamberSpotLight {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
     }
 }
