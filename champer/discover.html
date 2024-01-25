@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curtis J. Price - WDD 230 -  Oregon State Chamber of Commerce - Discover Page</title>
+    <meta name="description"
+        content="Curtis J. Price WDD 230 - Web Frontend Development course assignment portal. site contains links to all completed assignments for the course.">
+    <meta name="author" content="Curtis J. Price">
+    <link rel="icon" href="images/">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <meta property="og:title" content="Curtis J. Price WDD 230 Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1625109998123-40f1cc978735?q=80&w=1153&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <meta property="og:url" content="https://curtisjprice.github.io/WDD-230/">
+</head>
+
+<body>
+    <header>
+        <img src="images/" alt="OSCC logo">
+        <h1>Oregon State Chamber of Commerce</h1>
+        <span>
+            <button>Benefits</button>
+            <button>Join Us</button>
+        </span>
+
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li class="active">
+            <a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Engagements</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">News</a></li>
+        </ul>
+        <button>Join the Chamber</button>
+    </nav>
+    <main>
+        <div class="parent1">
+            <section class="card1">
+                <picture>
+                    <source media="(max-width: 400px)" srcset="images/discover-small.webp">
+                    <source media="(max-width: 960px)" srcset="images/discover-medium.webp">
+                    <img src="images/" alt="discover sienna plantation chamber" loading="lazy" width="500" height="250">
+                </picture>
+                <h2>Discover more for the Oregon State Chamber of Commerce, or OSCC.</h2>
+            </section>
+
+            <section class="card2">
+                <h2>The Premier Resource for and about Sienna Plantation Business Community</h2>
+                <p>The Sienna Plantation Chamber of Commerce (SPCC) is the leading regional advocate for the economic and civic interests of the Sienna Plantation business community.</p>
+                <span>
+                    <button class="event">More About Sienna</button>
+                </span>
+            </section>    
+        </div>
+
+        <div class="discover">
+
+            <div class="discover-sidebar">
+
+            <section class="left-sidebar-1">
+                <h2>Connect Now</h2>
+                <p>As our valued member, you can connect with other members by searching our Info Hub Membership Directory.</p>
+                <button>Connect</button>
+            </section>
+
+            <section class="left-sidebar-2">
+                <h2>Our Mission</h2>
+                <picture><img src="images/" alt="key industries" width="596" height="263" loading="lazy"></picture>
+                <p>The Oregon State Chamber of Commerce</p>
+            </section>
+
+            <section class="left-sidebar-3">
+                <h2>Business Resource</h2>
+                <p>The Oregon State Chamber of Commerce</p>
+                <button>Resources</button>
+            </section>
+
+            <section class="visit-card">
+                <h2>Website Visit Count!!</h2>
+                <p id="visit-message">Back so soon! Awesome!</p>
+            </section>
+
+            </div>
+
+        <div class="discover-content">
+            <h2>Industries in Sienna</h2>
+            <div class="content">
+                <picture><img src="images/" alt="discover" width="800" height="450" loading="lazy"></picture>
+            </div>
+            <p>Finacial Services</p>
+        
+        <div class="content">
+            <picture><img src="images/" alt="discover" width="800" height="450" loading="lazy"></picture>
+            <p>Technology Services</p>
+        </div>
+        <div class="content">
+            <picture><img src="images/" alt="discover" width="800" height="450" loading="lazy"></picture>
+            <p>Manufacturing Services</p>
+        </div>
+        <div class="content">
+            <picture><img src="images/" alt="discover" width="800" height="450" loading="lazy"></picture>
+            <p>Multi-housing Services</p>
+        </div>
+        <div class="content">
+            <picture><img src="images/" alt="discover" width="800" height="450" loading="lazy"></picture>
+            <p>Industrial Services</p>
+        </div>
+        <div class="content">
+            <picture><img src="images/" alt="discover" width="800" height="450" loading="lazy"></picture>
+            <p>Restaurant Services</p>
+        </div>
+        </div>
+        </div>
+
+    <div class="gold"></div>
+    
+	<p><span class="label">Date.now(): </span> <span id="today"></span> &nbsp;<span class="smaller">(milliseconds)</span></p>
+
+    </main>
+
+    <footer>
+        <div class="copyright">&copy; <span id="currentYear"></span> Copyright © Brigham Young University-Idaho | All rights
+            reserved | Curtis J. Price | Eagle Creek, Oregon
+            <div id="lastModified"></div>
+        </div>
+        <img class="flag" src="images/" alt="Oregon_flag">
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/menuHam.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    
+</body>
+
+
+</html>

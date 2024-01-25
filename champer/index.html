@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curtis J. Price - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230, Curtis J. Price, Oregon State Chamber of Commerce.">
+    <meta name="author" content="Curtis J. Price">
+    <meta property="og:title" content="Curtis J. Price - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://curtisjprice.github.io/WDD-230/">
+    <meta property="og:url" content="https://curtisjprice.github.io/WDD-230/">
+    <meta property="og:description" content="WDD 230, Curtis J. Price, Oregon State Chamber of Commerce.">
+    <meta property="og:locale" content="en_US">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+</head>
+<body>
+    <div id="mode">
+        🔆/🌒
+    </div>
+    <div class="container">
+        <header>
+            <img src="images/logo.jpg" alt="chamber_logo">
+            <img class="facebookImage" src="images/facebook.png" alt="facebook">
+            <img class="instagramImage" src="images/instagram.png" alt="instagram">
+            <h1>Oregon State Chamber of Commerce</h1>
+        </header>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chamber/index.html">Chamber</a></li>
+                <li><a href="chamber/discover.html">Discover</a></li>
+                <li><a href="chamber-site-plan.html">Site Plan</a></li>
+                <li><a href="form">Form</a></li>
+            </ul>
+            <div class="imageContainer">
+                <img class="bannerImage" src="images/jardim_rizzo_photo.jpg" alt="chamber_logo">
+                <a class="joinButton" href="index.html" target="_blank" rel="noopener noreferrer">Join Now</a>
+            </div>
+        </nav>
+    </div>
+    <main class="parent">
+        <section class="card01"> 
+            <h3>Events</h3>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aliquid repudiandae numquam ipsa dolore esse doloremque error veritatis porro fuga. Sunt corporis praesentium sint expedita, provident quidem vel reiciendis nostrum!</li>
+                <li>Blanditiis odit, sit amet consectetur adipisicing elit. Expedita inventore architecto vitae corporis? Ipsam perspiciatis vel aliquam cum harum molestias quibusdam non ex! Error ullam cupiditate magnam earum corporis nihil.</li>
+                <li>Ipsam perspiciatis consectetur adipisicing elit. Blanditiis odit in iste alias voluptatibus doloribus doloremque numquam. Exercitationem deserunt corporis ducimus pariatur magnam quia ipsa explicabo beatae. Facere, excepturi aut.</li>
+                <li>Oluptatibus doloribus doloremque numquam. Exercitationem deserunt corporis ducimus pariatur magnam quia ipsa explicabo beatae. Facere, excepturi aut.</li>
+            </ul>
+        </section>
+        <section class="card02">
+            <div class="whetherInformation">
+                <div class="weather-section">
+                    <h2 class="whetherData">Weather Forecast</h2>
+                    <div class="whetherToday">Today: Sunny, 25°C</div>
+                    <div class="whetherToday">Humilidy: 29%</div>
+                    <div class="whetherToday">Wind chill: -11.5 °C</div>
+                    <img class="whetherImage" src="images/sunny.png" alt="Sunny">
+                </div>
+                <div class="weather-section">
+                    <h2 class="whetherData">Weather information</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, corporis. Nostrum rem blanditiis animi molestiae. Distinctio delectus quam accusamus hic quidem incidunt ratione ipsam magnam. Labore, officia reiciendis. Esse, eveniet.</p>
+                </div>
+            </div>
+        </section>
+        <section class="card03">
+            <div class="chamberSpotLight">
+                <div class="SpotLight">
+                    <h2 class="spotLightInf">Thankful Transport</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, corporis. Nostrum rem blanditiis animi molestiae. Esse, eveniet.</p>
+                </div>
+                <div class="SpotLight">
+                    <h2 class="spotLightInf">Build a Treefort</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, corporis. Nostrum rem blanditiis animi molestiae. Esse, eveniet.</p>
+                </div>
+                <div class="SpotLight">
+                    <h2 class="spotLightInf">Special Services</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, corporis.Labore, officia reiciendis. Esse, eveniet.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="copyright">&copy; <span id="currentYear"></span> Copyright © Brigham Young University-Idaho | All rights
+            reserved | Curtis J. Price | Eagle Creek, Oregon
+            <div id="lastModified"></div>
+        </div>
+        <img class="flag" src="images/" alt="Oregon_flag">
+    </footer>>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/menuHam.js"></script>
+</body>
+</html>
