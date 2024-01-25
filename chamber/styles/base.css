@@ -24,6 +24,7 @@ body {
 }
 
 header {
+    align-self: center;
     height: 80px;
     width: 820px;
     display: flex;
