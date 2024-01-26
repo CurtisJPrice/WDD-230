@@ -20,7 +20,7 @@ main {
 	margin: 0.5rem auto;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	padding: 0.5rem;
-	background-color: #bed;
+	background-color:lightsalmon;
 	display: grid;
 	grid-template-columns: 1fr;
 	width: 95%;

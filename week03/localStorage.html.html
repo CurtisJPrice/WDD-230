@@ -4,25 +4,27 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="styles/bom.css">
-<title>BOM Favorites</title>
+<link rel="stylesheet" href="styles/localStorage.css">
+<title>BOM Favorites with Local Storage</title>
 </head>
 <body>
-<h1>📖 Book of Mormon - Top 10</h1>
+<h1>📖 Book of Mormon - with Local Storage</h1>
 <main>
 	<div class="input">
 		<label>Enter Book and Chapter<br>
 			<input type="text" id="favchap" placeholder="Alma 5" required></label>
 		<button type="submit">Add Chapter</button>
 	</div>
-	<div class="listcontainer">
-		<ul class="list">
+
+		<ul id="listcontainer">
 		</ul>
-	</div>
+
+	
 </main>
+<p>Dev Tools > Console will show the values from the script</p>
+<p>Dev Tools > Application > Local Storage will display the local storage array</p>
 
 
-
-<script src="scripts/bom.js"></script>
+<script src="scripts/localStorage.js"></script>
 </body>
 </html>
