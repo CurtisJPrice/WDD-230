@@ -1,0 +1,8 @@
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    
+}
+
+.hover:hover {box-shadow: 0 0 50px #333;}
+

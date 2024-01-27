@@ -16,6 +16,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/discover.css">
     <meta property="og:title" content="Curtis J. Price WDD 230 Web Frontend Development">
     <meta property="og:type" content="website">
     <meta property="og:image"
@@ -52,7 +53,7 @@
                 <picture>
                     <source media="(max-width: 400px)" srcset="images/discover-small.webp">
                     <source media="(max-width: 960px)" srcset="images/discover-medium.webp">
-                    <img src="images/" alt="discover sienna plantation chamber" loading="lazy" width="500" height="250">
+                    <img src="images/OIP.jpg" alt="discover Oregon State chamber" loading="lazy" width="500" height="250">
                 </picture>
                 <h2>Discover more for the Oregon State Chamber of Commerce, or OSCC.</h2>
             </section>
@@ -78,7 +79,7 @@
 
             <section class="left-sidebar-2">
                 <h2>Our Mission</h2>
-                <picture><img src="images/" alt="key industries" width="596" height="263" loading="lazy"></picture>
+                <picture><img src="images/OSCC-logo.png" alt="key industries" width="596" height="263" loading="lazy"></picture>
                 <p>The Oregon State Chamber of Commerce</p>
             </section>
 
@@ -98,43 +99,41 @@
         <div class="discover-content">
             <h2>Industries in Oregon</h2>
             <div class="content">
-                <picture><img src="images/" alt="discover" width="800" height="450" loading="lazy"></picture>
+                <picture><img class="hover" src="images/finance.webp" alt="discover" width="400" height="225" loading="lazy"></picture>
+                
+                <div>Financial Services</div>
             </div>
-            <p>Finacial Services</p>
+            
         
         <div class="content">
-            <picture><img src="images/" alt="discover" width="800" height="450" loading="lazy"></picture>
-            <p>Technology Services</p>
+            <picture><img class="hover" src="images/tech.webp" alt="discover" width="400" height="225" loading="lazy"></picture>
+            <div>Technology Services</div>
         </div>
         <div class="content">
-            <picture><img src="images/" alt="discover" width="800" height="450" loading="lazy"></picture>
-            <p>Manufacturing Services</p>
+            <picture><img class="hover" src="images/factory.webp" alt="discover" width="400" height="225" loading="lazy"></picture>
+            <div>Manufacturing Services</div>
         </div>
         <div class="content">
-            <picture><img src="images/" alt="discover" width="800" height="450" loading="lazy"></picture>
-            <p>Multi-housing Services</p>
+            <picture><img class="hover" src="images/house.webp" alt="discover" width="400" height="225" loading="lazy"></picture>
+            <div>Multi-housing Services</div>
         </div>
         <div class="content">
-            <picture><img src="images/" alt="discover" width="800" height="450" loading="lazy"></picture>
-            <p>Industrial Services</p>
+            <picture><img class="hover" src="images/industry.webp" alt="discover" width="400" height="225" loading="lazy"></picture>
+            <div>Industrial Services</div>
         </div>
         <div class="content">
-            <picture><img src="images/" alt="discover" width="800" height="450" loading="lazy"></picture>
-            <p>Restaurant Services</p>
-        </div>
-        </div>
+            <picture><img class="hover" src="images/cafe.webp" alt="discover" width="400" height="225" loading="lazy"></picture>
+            <div>Restaurant Services</div>
         </div>
 
     <div class="gold"></div>
-    
-	<p><span class="label">Date.now(): </span> <span id="today"></span> &nbsp;<span class="smaller">(milliseconds)</span></p>
 
     </main>
 
     <footer>
         <div class="copyright">&copy; <span id="currentYear"></span> Copyright © Brigham Young University-Idaho | All rights
             reserved | Curtis J. Price | Eagle Creek, Oregon
-            <div id="lastModified"></div>
+            <div src="scripts/getDates.js"></div>
         </div>
         <img class="flag" src="images/OIP.jpg" alt="Oregon_flag">
     </footer>
