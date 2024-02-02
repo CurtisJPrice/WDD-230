@@ -1,35 +1,116 @@
-/* 64em is also 1028px (if basefont is 16px) */
-@media only screen and (min-width: 45em) {
-
-    header, nav, main, footer {
-        max-width: 64em;
-        margin:auto;
+@media screen and (max-width: 820px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
     }
 
-/*----------- BODY --------------*/
+    nav li {
+        float: none;
+        text-align: center;
+    }
 
+    header {
+        align-items: center;
+        justify-content: center;
+        padding: 2px;
+        background-color: #3e8f40;
+        color: white;
+    }
 
+    header img {
+        margin-right: 0;
+        height: 100px;
+        width: 100px; 
+    }
 
-/*----------- HEADER --------------*/
+    .parent {
+        grid-template-columns: 1fr;
+    }
 
+    .card01,
+    .card02,
+    .card03,
+    .card04 {
+        width: 100%;
+        margin-left: 0;
+    }
 
+    .identName {
+        font-size: 20px;
+        grid-column: 1 / -1; 
+        text-align: center;
+        font-size: 1rem;
+        border-bottom: 1px solid rgb(163, 159, 159);
+        color: #ffffff;
+    }
 
-/*----------- NAVIGATION --------------*/
-nav ul {margin-left: 2%;}
-nav ul li {width: auto;}
-nav ul li:first-child a {border-left: 1px solid #777;}
-nav ul li:last-child a {border-right: 1px solid #777;}
-nav ul li a{padding: .5rem 1rem;}
+    .parent h3 {
+        font-size: 15px;
+        background: #3e8f40;
+        color: #ffffff;
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
 
+    .wireframe {
+        width: 100%;
+        margin-left: 0;
+        
+    }
 
-/*----------- MAIN --------------*/
-
-form label.sbs {
-padding: .4rem 0;
 }
 
+@media (min-width: 820px) {
+	.identName {
+		font-size: 2.5rem;
+		margin-left: 0;
+		text-align: center;
+        color: #ffffff;
+	}
+	
+	.studClass {
+		font-size: 2rem;
+		text-align: center;
+	}
 
+	#menu {
+		display: none; 
+	}
 
-/*----------- FOOTER --------------*/
+	.navigation {
+		flex-direction: row;
+	}
 
-} /* end of media query */
+	.navigation li {
+		display: flex;
+		flex: 1 1 100%;
+	}
+	
+	.stuff {
+		margin: 1rem auto;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+    .heroImage div {
+        font-size: 14px; 
+        padding: 15px 15px 15px 15px; 
+        margin: 10px; 
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .heroImage span {
+        font-size: 18px; 
+        padding: 10px; 
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        width: 100%;
+        margin-left: 0;
+    }
+}

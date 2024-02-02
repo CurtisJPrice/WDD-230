@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curtis J. Price - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230, Curtis J. Price, Oregon State Chamber of Commerce.">
+    <meta name="author" content="Curtis J. Price">
+    <meta property="og:title" content="Curtis J. Price - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://curtisjprice.github.io/WDD-230/">
+    <meta property="og:url" content="https://curtisjprice.github.io/WDD-230/">
+    <meta property="og:description" content="WDD 230, Curtis J. Price, Oregon State Chamber of Commerce.">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <span><h1>Course Proposal</h1></span>
+        <span><h2>Designing Web Forms</h2></span>
+    </header>
+
+    <nav class="clearfix">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li class="active"><a href="#">Propose</a></li>
+            <li><a href="#">Winners</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Course Proposal Application</h1>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">First Name* <input type="text" name="fname" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" required></label>
+                <label class="top">Phone <input type="tel" name="phone" placeholder="123456789"></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@hotmail.com" required></label>
+                <label class="top">Website <input type="url" name="url" placeholder="http://"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Course Information</legend>
+                <div>Audience</div>
+                <label class="sbs"><input type="radio" name="audience" value="beginner"> Beginner</label>
+                <label class="sbs"><input type="radio" name="audience" value="beginner"> Intermediate</label>
+                <label class="sbs"><input type="radio" name="audience" value="beginner"> Advanced</label>
+
+                <div>Software Needed</div>
+                <label class="sbs"><input type="checkbox" name="editing" value="yes"> Photo Editing</label>
+                <label class="sbs"><input type="checkbox" name="code" value="yes"> Coding</label>
+                <label class="sbs"><input type="checkbox" name="process" value="yes"> Preprocessor</label>
+                <label class="sbs"><input type="checkbox" name="client" value="yes"> FTP Client</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Funding</legend>
+                <label class="top" >Antcipated Completon Date <input type="date" name="completeDate"></label>
+                <label class="top">Course Subject
+                    <select name="subject">
+                            <option value="">Please Select &#9662;</option>
+                        <option value="software">Software Development</option>
+                        <option value="info">Creative Professional</option>
+                        <option value="data">Data Professional</option>
+                        <option value="construction">Construction</option>
+                        <option value="manufacturing">Manufacturing</option>
+                        <option value="business">Business Professional</option>
+                        <option value="security">Cyber Security</option>
+                    </select>
+                </label>
+
+                <label class="top">How Many Authors <input type="number" name="authors"></label>
+
+            </fieldset>
+
+            <input type="submit" value = "Propose My Course" class="submitBtn">
+
+        </form>
+    </main>
+
+
+    <footer>
+        <div class="copyright">&copy; <span id="currentYear"></span> Copyright © Brigham Young University-Idaho | All rights
+            reserved | Curtis J. Price | Eagle Creek, Oregon
+            <div id="lastModified"></div>
+        </div>
+        <img class="flag" src="images/OIP.jpg" alt="Oregon_flag">
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/menuHam.js"></script>
+    <script src="scripts/darkMode.js"></script>
+</body>
+
+</html>
