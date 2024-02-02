@@ -33,7 +33,7 @@
         <h1>Course Proposal Application</h1>
         <form method="get" action="thanks.html">
             <fieldset>
-                <legend>Applicat Information</legend>
+                <legend>Applicant Information</legend>
                 <label class="top">First Name* <input type="text" name="fname" required></label>
                 <label class="top">Last Name* <input type="text" name="lname" required></label>
                 <label class="top">Phone <input type="tel" name="phone" placeholder="123456789"></label>
@@ -82,9 +82,16 @@
 
 
     <footer>
-        &copy; &bull; Paul Cheney &bull; 123-555-6789
+        <div class="copyright">&copy; <span id="currentYear"></span> Copyright © Brigham Young University-Idaho | All rights
+            reserved | Curtis J. Price | Eagle Creek, Oregon
+            <div id="lastModified"></div>
+        </div>
+        <img class="flag" src="images/OIP.jpg" alt="Oregon_flag">
     </footer>
-    <script src="scripts/scripts.js"></script>
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/menuHam.js"></script>
+    <script src="scripts/darkMode.js"></script>
 </body>
 
 </html>
