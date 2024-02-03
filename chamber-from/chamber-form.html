@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curtis J. Price - WDD 230 - Web Frontend Development</title>
+    <title>Curtis J. Price - WDD 230 - Web Frontend Development - Chamber Join</title>
     <meta name="description" content="WDD 230, Curtis J. Price, Oregon State Chamber of Commerce.">
     <meta name="author" content="Curtis J. Price">
     <meta property="og:title" content="Curtis J. Price - WDD 230 - Web Frontend Development">
@@ -21,71 +21,86 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <header>
-        <span><h1>Course Proposal</h1></span>
-        <span><h2>Designing Web Forms</h2></span>
-    </header>
-
-    <nav class="clearfix">
-        <ul>
-            <li><a href="#">About</a></li>
-            <li class="active"><a href="#">Propose</a></li>
-            <li><a href="#">Winners</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <h1>Course Proposal Application</h1>
-        <form method="get" action="thanks.html">
-            <fieldset>
-                <legend>Applicant Information</legend>
-                <label class="top">First Name* <input type="text" name="fname" required></label>
-                <label class="top">Last Name* <input type="text" name="lname" required></label>
-                <label class="top">Phone <input type="tel" name="phone" placeholder="123456789"></label>
-                <label class="top">Email* <input type="email" name="email" placeholder="someone@hotmail.com" required></label>
-                <label class="top">Website <input type="url" name="url" placeholder="http://"></label>
-            </fieldset>
-
-            <fieldset>
-                <legend>Course Information</legend>
-                <div>Audience</div>
-                <label class="sbs"><input type="radio" name="audience" value="beginner"> Beginner</label>
-                <label class="sbs"><input type="radio" name="audience" value="beginner"> Intermediate</label>
-                <label class="sbs"><input type="radio" name="audience" value="beginner"> Advanced</label>
-
-                <div>Software Needed</div>
-                <label class="sbs"><input type="checkbox" name="editing" value="yes"> Photo Editing</label>
-                <label class="sbs"><input type="checkbox" name="code" value="yes"> Coding</label>
-                <label class="sbs"><input type="checkbox" name="process" value="yes"> Preprocessor</label>
-                <label class="sbs"><input type="checkbox" name="client" value="yes"> FTP Client</label>
-            </fieldset>
-
-            <fieldset>
-                <legend>Funding</legend>
-                <label class="top" >Antcipated Completon Date <input type="date" name="completeDate"></label>
-                <label class="top">Course Subject
-                    <select name="subject">
-                            <option value="">Please Select &#9662;</option>
-                        <option value="software">Software Development</option>
-                        <option value="info">Creative Professional</option>
-                        <option value="data">Data Professional</option>
-                        <option value="construction">Construction</option>
-                        <option value="manufacturing">Manufacturing</option>
-                        <option value="business">Business Professional</option>
-                        <option value="security">Cyber Security</option>
-                    </select>
-                </label>
-
-                <label class="top">How Many Authors <input type="number" name="authors"></label>
-
-            </fieldset>
-
-            <input type="submit" value = "Propose My Course" class="submitBtn">
-
-        </form>
-    </main>
+    <body>
+        <header>
+        <img src="images/OSCC-logo.png" alt="Site Logo">
+        <div>
+            <h1>Oregon State</h1>
+            <p>Chamber of Commerce</p>
+        </div>
+        <nav>
+            <button id="menu-button">☰</button>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li class="active"><a href="chamber-form/chamber-form.html">Join</a></li>
+            </ul>
+        </nav>
+    
+        </header>
+    
+        <main>
+        <h1>Join the Chamber</h1>
+        <div class="join">
+            <section>
+            <h2>Become a Member</h2>
+            <form action="thankyou.html" method="get">
+                <fieldset>
+                <label>Your Title <input type="text" name="title" pattern="[A-Za-z -]{7,}" title="seven or more"></label>
+                <label>First Name* <input type="text" name="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" required></label>
+                <label>Email* <input type="text" name="email" placeholder="tom@mail.com" required></label>
+                <label>Cell Number* <input type="tel" name="phone"  required></label>
+                <label>Business Name* <input type="text" name="busname" required></label>
+                </fieldset>
+                
+                <fieldset>
+                <legend>Membership Level</legend>
+                <label><input type="radio" name="level" value="not-for-profit"> NP Membership</label>
+                <label><input type="radio" name="level" value="Bronze Membership"> Bronze Membership</label>
+                <label><input type="radio" name="level" value="Silver Membership"> Silver Membership</label>
+                <label><input type="radio" name="level" value="Gold Membership"> Gold Membership</label>
+                </fieldset>
+        <label>Business Description<textarea name="description"></textarea></label>
+        <input name="today" value="xxx" type="hidden">
+        
+        
+                <input type="submit" value="Apply">
+            </form>
+            </section>
+            <section>
+            <h2>Membership Level Details</h2>
+            <h3>NP Membership</h3>
+            <ul>
+                <li>Vote at Meetings</li>
+            </ul>
+            <p>$00</p>
+            <h3>Bronze Membership</h3>
+            <ul>
+                <li>Vote at Meetings</li>
+                <li>Ride in the Parade</li>
+            </ul>
+            <p>$100</p>
+            <h3>Silver Membership</h3>
+            <ul>
+                <li>Vote at Meetings</li>
+                <li>Ride in the Parade</li>
+                <li>Promotion on home page</li>
+            </ul>
+            <p>$200</p>
+            <h3>Gold Membership</h3>
+            <ul>
+                <li>Vote at Meetings</li>
+                <li>Ride in the Parade</li>
+                <li>Promotion on home page</li>
+                <li>Run for President</li>
+            </ul>
+            <p>$300</p>
+            </section>
+        </div>
+    
+        </main>
 
 
     <footer>
