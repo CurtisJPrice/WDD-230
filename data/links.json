@@ -21,10 +21,6 @@
                 "title":"Design"
             },
             {
-                "url":"https://codepen.io/jvgar09/pen/BabQGmP",
-                "title":"Menu"
-            },
-            {
                 "url":"https://codepen.io/jvgar09/pen/NWJbejP",
                 "title":"bom-25"
             }
@@ -33,10 +29,6 @@
     {
         "week": "Week 3",
         "links": [
-            {
-                "url":"week03/images/lanscape.webp",
-                "title":"WebP"
-            },
             {
                 "url":"week03/lazyload.html",
                 "title":"Lazy"
@@ -55,30 +47,14 @@
         "week": "Week 4",
         "links": [
             {
-                "url":"week04/images/exercises.jpg",
-                "title":"Combinators"
-            },
-            {
                 "url":"week04/tablebuild.html",
                 "title":"Table"
-            },
-            {
-                "url":"week04/form-start/index.html",
-                "title":"Form"
             }
         ] 
     },
     {
         "week": "Week 5",
         "links": [
-            {
-                "url":"https://codepen.io/jvgar09/pen/ExMErWp?editors=1100",
-                "title":"Pseudo-Element"
-            },
-            {
-                "url":"week05/new-ward-members.json",
-                "title":"JSON"
-            },
             {
                 "url":"week05/prophets.html",
                 "title":"Prophets"
