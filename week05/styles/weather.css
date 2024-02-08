@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header,
+main,
+footer {
+    margin: 1rem;
+    position: relative;
+}
+
+
+h1,
+footer {
+    background-color: #1826e4;
+    color: #000;
+    border-bottom: 1px solid #eee;
+    text-shadow: 0 0 15px #777;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+
+}
+
+p {
+    margin: 0;
+    text-align: center;
+}
+
+figure {
+    width: auto;
+    height: 50px;
+    justify-content: center;
+    padding: 2rem 1rem;
+    margin: 0 0 0 45%;
+    
+    
+}
