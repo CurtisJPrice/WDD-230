@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curtis J. Price - WDD 230 - Web Frontend Development - Chamber Directory</title>
+    <meta name="description" content="WDD 230, Curtis J. Price, Oregon State Chamber of Commerce.">
+    <meta name="author" content="Curtis J. Price">
+    <meta property="og:title" content="Curtis J. Price - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://curtisjprice.github.io/WDD-230/">
+    <meta property="og:url" content="https://curtisjprice.github.io/WDD-230/">
+    <meta property="og:description" content="WDD 230, Curtis J. Price, Oregon State Chamber of Commerce.">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chamber/index.html">Chamber</a></li>
+                <li><a href="chamber-site-plan.html">Site Plan</a></li>
+                <li><a href="chamber-form/chamber-form.html">Form</a></li>
+                <li><a href="directory.html">Directory</a></li>
+            </ul>
+        </nav>
+        </header>
+    </div>
+    <main>
+        <div class="menu">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
+        </div>
+        <hr>
+        <article class="grid">
+            <section>
+                <img src="https://assets.ldscdn.org/c8/b5/c8b5e860a7edbbef90734c83be366e8d359d2c0b/payson_utah_temple.jpg" alt="Payson Utah Temple" />
+                <h3>Payson Utah</h3>
+                <p>2015</p>
+                <a href="https://www.churchofjesuschrist.org/temples/details/payson-utah-temple?lang=eng" target="_blank">Details</a>
+            </section>
+    
+            <section>
+                <img src="https://assets.ldscdn.org/c6/07/c6077e1778bfdf5a91569ab3acf57e9c31a7175f/boise_idaho_temple_sunshine.jpeg" alt="Boise Idaho Temple" />
+                <h3>Boise Idaho</h3>
+                <p>1984</p>
+                <a href="https://www.churchofjesuschrist.org/temples/details/boise-idaho-temple?lang=eng" target="_blank">Details
+                </a>
+            </section>
+    
+            <section>
+                <img src="https://assets.ldscdn.org/83/16/831688ef82fcab202e941ed8fd5869b28f9b5db11086883/oakland_california_temple_exterior.jpeg" alt="Oakland California Temple" />
+                <h3>Oakland California</h3>
+                <p>1964</p>
+                <a href="https://www.churchofjesuschrist.org/temples/details/oakland-california-temple?lang=eng" target="_blank">Details </a>
+            </section>
+    
+            <section>
+                <img src="https://assets.ldscdn.org/72/14/7214efb047426ffe6b581906fa0092a624ebc637/seattle_washington_temple_exterior.jpg" alt="Seattle Washington Temple" />
+                <h3>Seattle Washington</h3>
+                <p>1980</p>
+                <a href="https://www.churchofjesuschrist.org/temples/details/seattle-washington-temple?lang=eng" target="_blank">Details</a>
+            </section>
+    
+            <section>
+                <img src="https://assets.ldscdn.org/2c/77/2c77d5fd39c0646e0122b1a1472f1d538aa3aa7e/portland_oregon_temple.jpeg" alt="Portland Oregon Temple" />
+                <h3>Portland Oregon</h3>
+                <p>1989</p>
+                <a href="https://www.churchofjesuschrist.org/temples/details/portland-oregon-temple?lang=eng" target="_blank">Details</a>
+            </section>
+    
+            <section>
+                <img src="https://assets.ldscdn.org/e5/54/e5546a3599c023ba83a4d751fb6fc196b5ab6ada/jordan_river_temple_exterior_images.jpeg" alt="Jordan River Utah" />
+                <h3>Jordan River Utah</h3>
+                <p>1981</p>
+                <a href="https://www.churchofjesuschrist.org/temples/details/jordan-river-utah-temple?lang=eng" target="_blank">Details</a>
+            </section>
+    
+            <section>
+                <img src="https://assets.ldscdn.org/77/eb/77eb82391ad1795a117b25ee3deaf2a4d229311a/provo_temple_lds.jpg" alt="Portland Oregon Temple" />
+                <h3>Provo Utah</h3>
+                <p>1972</p>
+                <a href="https://www.churchofjesuschrist.org/temples/details/provo-utah-temple?lang=eng" target="_blank">Details</a>
+            </section>
+    
+            <section>
+                <img src="https://assets.ldscdn.org/57/18/5718c8b9c5a103646c0bd22554cb268b88986f05/provo_city_center_temple_exterior.jpg" alt="Provo City Center Temple" />
+                <h3>Provo City Center</h3>
+                <p>2016</p>
+                <a href="https://www.churchofjesuschrist.org/temples/details/provo-city-center-temple?lang=eng" target="_blank">Details</a>
+            </section>
+        </article>
+    </main>
+
+
+    <footer>
+        <div class="copyright">&copy; <span id="currentYear"></span> Copyright © Brigham Young University-Idaho | All rights
+            reserved | Curtis J. Price | Eagle Creek, Oregon
+            <div id="lastModified"></div>
+        </div>
+        <img class="flag" src="images/OIP.jpg" alt="Oregon_flag">
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/menuHam.js"></script>
+    <script src="scripts/members.js"></script>
+    <script src="data/members.json"></script>
+    
+</body>
+</html>
