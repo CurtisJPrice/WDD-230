@@ -4,56 +4,56 @@
         "name": "Payson Utah",
         "url" :"https://www.churchofjesuschrist.org/temples/details/payson-utah-temple?lang=eng",
 		"year" :"2015",
-        "img": "https://assets.ldscdn.org/c8/b5/c8b5e860a7edbbef90734c83be366e8d359d2c0b/payson_utah_temple.jpg",
+        "logo": "images/payson_utah.webp",
         "level": 3
     },
     {
         "name": "Boise Idaho",
         "url" :"https://www.churchofjesuschrist.org/temples/details/boise-idaho-temple?lang=eng",
 		"year" :"1984",
-        "img": "https://assets.ldscdn.org/c6/07/c6077e1778bfdf5a91569ab3acf57e9c31a7175f/boise_idaho_temple_sunshine.jpeg",
+        "logo": "https://assets.ldscdn.org/c6/07/c6077e1778bfdf5a91569ab3acf57e9c31a7175f/boise_idaho_temple_sunshine.jpeg",
         "level": 1
     },
     {
         "name": "Oakland California",
         "url" :"https://www.churchofjesuschrist.org/temples/details/oakland-california-temple?lang=eng",
 		"year" :"1964",
-        "img" : "https://assets.ldscdn.org/83/16/831688ef82fcab202e941ed8fd5869b28f9b5db11086883/oakland_california_temple_exterior.jpeg",
+        "logo" : "https://assets.ldscdn.org/83/16/831688ef82fcab202e941ed8fd5869b28f9b5db11086883/oakland_california_temple_exterior.jpeg",
         "level": 2
     },
     {
         "name": "Seattle Washington",
         "url" :"https://www.churchofjesuschrist.org/temples/details/seattle-washington-temple?lang=eng",
 		"year" :"1980",
-        "img": "https://assets.ldscdn.org/72/14/7214efb047426ffe6b581906fa0092a624ebc637/seattle_washington_temple_exterior.jpg",
+        "logo": "https://assets.ldscdn.org/72/14/7214efb047426ffe6b581906fa0092a624ebc637/seattle_washington_temple_exterior.jpg",
         "level": 3
     },
     {
         "name": "Portland Oregon",
         "url" :"https://www.churchofjesuschrist.org/temples/details/portland-oregon-temple?lang=eng",
 		"year" :"1989",
-        "img": "https://assets.ldscdn.org/2c/77/2c77d5fd39c0646e0122b1a1472f1d538aa3aa7e/portland_oregon_temple.jpeg",
+        "logo": "https://www.churchofjesuschrist.org/imgs/91ee64d1750b013886f11c27f2c87c5535f5cbad/full/320%2C/0/default",
         "level": 2
     },
     {
         "name": "Jordan River Utah",
         "url" :"https://www.churchofjesuschrist.org/temples/details/jordan-river-utah-temple?lang=eng",
 		"year" :"1981",
-        "img": "https://assets.ldscdn.org/e5/54/e5546a3599c023ba83a4d751fb6fc196b5ab6ada/jordan_river_temple_exterior_images.jpeg",
+        "logo": "https://assets.ldscdn.org/e5/54/e5546a3599c023ba83a4d751fb6fc196b5ab6ada/jordan_river_temple_exterior_images.jpeg",
         "level": 1
     },
     {
         "name": "Provo Utah",
         "url" :"https://www.churchofjesuschrist.org/temples/details/provo-utah-temple?lang=eng",
 		"year" :"1972",
-        "img": "https://assets.ldscdn.org/77/eb/77eb82391ad1795a117b25ee3deaf2a4d229311a/provo_temple_lds.jpg",
+        "logo": "https://assets.ldscdn.org/77/eb/77eb82391ad1795a117b25ee3deaf2a4d229311a/provo_temple_lds.jpg",
         "level": 0
     },
     {
         "name": "Provo City Center",
         "url" :"https://www.churchofjesuschrist.org/temples/details/provo-city-center-temple?lang=eng",
 		"year" :"2016",
-        "img": "https://assets.ldscdn.org/57/18/5718c8b9c5a103646c0bd22554cb268b88986f05/provo_city_center_temple_exterior.jpg",
+        "logo": "https://assets.ldscdn.org/57/18/5718c8b9c5a103646c0bd22554cb268b88986f05/provo_city_center_temple_exterior.jpg",
         "level": 3
     }
 ]

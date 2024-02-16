@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curtis J. Price - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230, Curtis J. Price, Oregon State Chamber of Commerce.">
+    <meta name="author" content="Curtis J. Price">
+    <meta property="og:title" content="Curtis J. Price - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://curtisjprice.github.io/WDD-230/">
+    <meta property="og:url" content="https://curtisjprice.github.io/WDD-230/">
+    <meta property="og:description" content="WDD 230, Curtis J. Price, Oregon State Chamber of Commerce.">
+    <meta property="og:locale" content="en_US">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+</head>
+<body>
+    <div id="mode">
+        🔆/🌒
+    </div>
+    <div class="container">
+        <header>
+            <img src="images/OSCC-logo.png" alt="chamber_logo">
+            <img class="facebookImage" src="images/facebook.png" alt="facebook">
+            <img class="instagramImage" src="images/instagram.png" alt="instagram">
+            <h1>Oregon State Chamber of Commerce</h1>
+        </header>
+        <nav>
+            <button id="menu-button">☰</button>
+            <ul class="navigation">
+                <li><a href="https://curtisjprice.github.io/WDD-230/index.html">Home</a></li>
+                <li><a class="active" href="index.html">Chamber</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="https://curtisjprice.github.io/WDD-230/chamber-site-plan.html">Site Plan</a></li>
+                <li><a href="form">Form</a></li>
+            </ul>
+            <div class="heroImage">
+                <img class="bannerImage" src="images/OSCC-logo.png" alt="chamber_logo">
+                <a class="joinButton" href="index.html" target="_blank" rel="noopener noreferrer">Join Now</a>
+            </div>
+        </nav>
+    </div>
+    <main class="parent">
+        <h1>Join the Chamber</h1>
+        <div class="join">
+        <section class="card01">
+            <h2>Become a Member</h2>
+            <form action="chamber-form/thanks.html" method="get">
+            <label>Your Title <input type="text" name="title" pattern="[A-Za-z -]{7,}" title="seven or more"></label>
+            <label>First Name* <input type="text" name="fname" required></label><label>Last Name* <input type="text" name="lname" required></label>
+            
+            <label>Email* <input type="text" name="email" placeholder="tom@mail.com" required></label>
+            <label>Cell Number* <input type="tel" name="phone"  required></label>
+            <label>Business Name* <input type="text" name="busname" required></label>
+            
+            <fieldset>
+                <legend>Membership Level</legend>
+                <label><input type="radio" name="level" value="not-for-profit"> NP Membership</label>
+                <label><input type="radio" name="level" value="Bronze Membership"> Bronze Membership</label>
+                <label><input type="radio" name="level" value="Silver Membership"> Silver Membership</label>
+                <label><input type="radio" name="level" value="Gold Membership"> Gold Membership</label>
+            </fieldset>
+        <label>Business Description<textarea name="description"></textarea></label>
+        <input name="today" value="xxx" type="hidden">
+        
+        
+            <input type="submit" value="Apply">
+            </form>
+        </section>
+        <section>
+            <h2>Membership Level Details</h2>
+            <h3>NP Membership</h3>
+            <ul>
+            <li>Vote at Meetings</li>
+            </ul>
+            <p>$00</p>
+            <h3>Bronze Membership</h3>
+            <ul>
+            <li>Vote at Meetings</li>
+            <li>Ride in the Parade</li>
+            </ul>
+            <p>$100</p>
+            <h3>Silver Membership</h3>
+            <ul>
+            <li>Vote at Meetings</li>
+            <li>Ride in the Parade</li>
+            <li>Promotion on home page</li>
+            </ul>
+            <p>$200</p>
+            <h3>Gold Membership</h3>
+            <ul>
+            <li>Vote at Meetings</li>
+            <li>Ride in the Parade</li>
+            <li>Promotion on home page</li>
+            <li>Run for President</li>
+            </ul>
+            <p>$300</p>
+        </section>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="copyright">&copy; <span id="currentYear"></span> Copyright © Brigham Young University-Idaho | All rights
+            reserved | Curtis J. Price | Eagle Creek, Oregon
+            <div id="lastModified"></div>
+        </div>
+        <img class="flag" src="images/OIP.jpg" alt="Oregon_flag">
+    </footer>
+    <script src="scripts/common.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/chamberWeather.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlight.js"></script>
+</body>
+</html>
