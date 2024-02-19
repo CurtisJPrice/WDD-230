@@ -23,13 +23,12 @@
 
 <body>
     <header>
-        <img src="images/OSCC-logo.png" alt="OSCC logo">
-        <div>Oregon State Chamber of Commerce</div>
-        <span>
-            <button>Benefits</button>
-            <button>Join Us</button>
-        </span>
+        <img src="images/OSCC-logo.png" alt="chamber_logo">
+        <img class="facebookImage" src="images/facebook.png" alt="facebook">
+        <img class="instagramImage" src="images/instagram.png" alt="instagram">
+        <h1>Oregon State Chamber of Commerce</h1>
     </header>
+
     <nav>
         <button id="menu"></button>
         <ul class="navigation">
@@ -39,9 +38,13 @@
             <li><a class="active" href="discover.html">Discover</a></li>
             <li><a href="join.html">Form</a></li>
         </ul>
-        <button>Join the Chamber</button>
+        <div class="heroImage">
+            <a class="joinButton" href="join.html" target="_blank" rel="noopener noreferrer">Join Now</a>
+        </div>
     </nav>
+
     <main>
+    <section>
         <div class="parent1">
             <section class="card1">
                 <picture>
@@ -56,16 +59,18 @@
                 <span>
                     <button class="event">More About Oregon</button>
                 </span>
+            <div class="discover-sidebar"></div>
+                <section class="left-sidebar-1">
+                    <h2>Connect Now</h2>
+                    <p>As our valued member, you can connect with other members by searching our Info Hub Membership Directory.</p>
+                    <button>Connect</button>
+                </section>
             </section>    
         </div>
+    </section>
 
+    <section>
         <div class="discover">
-            <div class="discover-sidebar"></div>
-            <section class="left-sidebar-1">
-                <h2>Connect Now</h2>
-                <p>As our valued member, you can connect with other members by searching our Info Hub Membership Directory.</p>
-                <button>Connect</button>
-            </section>
             <section class="left-sidebar-2">
                 <h2>Our Mission</h2>
                 <picture><img src="images/OSCC-logo.png" alt="key industries" width="596" height="263" loading="lazy"></picture>
@@ -109,6 +114,7 @@
             <div>Restaurant Services</div>
             </div>
         </div>
+    </section>
 
     <div class="gold"></div>
 

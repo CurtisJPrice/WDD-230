@@ -5,3 +5,27 @@ img {
 }
 
 .hover:hover {box-shadow: 0 0 50px #333;}
+
+header {
+    align-self: center;
+    height: 80px;
+    width: 820px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: #2A652C;
+    color: white;
+    box-shadow: 5px 5px 5px rgb(112, 112, 112);
+}
+
+header img {
+    border-radius: 20%;
+    height: 70px;
+    width: 90px; 
+    max-width: 100%;
+    margin-right: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
