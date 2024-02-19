@@ -7,7 +7,6 @@
     <meta name="description"
         content="Curtis J. Price WDD 230 - Web Frontend Development course assignment portal. site contains links to all completed assignments for the course.">
     <meta name="author" content="Curtis J. Price">
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
@@ -15,6 +14,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <meta property="og:title" content="Curtis J. Price WDD 230 Web Frontend Development">
     <meta property="og:type" content="website">
     <meta property="og:image"
@@ -25,12 +25,11 @@
 <body>
     <header>
         <img src="images/OSCC-logo.png" alt="OSCC logo">
-        <h1>Oregon State Chamber of Commerce</h1>
+        <div>Oregon State Chamber of Commerce</div>
         <span>
             <button>Benefits</button>
             <button>Join Us</button>
         </span>
-
     </header>
     <nav>
         <button id="menu"></button>
@@ -38,11 +37,7 @@
             <li class="active">
             <a href="https://curtisjprice.github.io/WDD-230/chamber/index.html">Home</a></li>
             <li><a href="https://curtisjprice.github.io/WDD-230/chamber/directory.html">Directory</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Engagements</a></li>
             <li><a class="active" href="discover.html">Discover</a></li>
-            <li><a href="#">News</a></li>
         </ul>
         <button>Join the Chamber</button>
     </nav>
@@ -65,62 +60,54 @@
         </div>
 
         <div class="discover">
-
             <div class="discover-sidebar"></div>
-
             <section class="left-sidebar-1">
                 <h2>Connect Now</h2>
                 <p>As our valued member, you can connect with other members by searching our Info Hub Membership Directory.</p>
                 <button>Connect</button>
             </section>
-
             <section class="left-sidebar-2">
                 <h2>Our Mission</h2>
                 <picture><img src="images/OSCC-logo.png" alt="key industries" width="596" height="263" loading="lazy"></picture>
                 <p>The Oregon State Chamber of Commerce</p>
             </section>
-
             <section class="left-sidebar-3">
                 <h2>Business Resource</h2>
                 <p>The Oregon State Chamber of Commerce</p>
                 <button>Resources</button>
             </section>
-
             <section class="visit-card">
                 <h2>Website Visit Count!!</h2>
                 <p id="visit-message">Back so soon! Awesome!</p>
             </section>
-
             </div>
-
-        <div class="discover-content">
+            <div class="discover-content">
             <h2>Industries in Oregon</h2>
             <div class="content">
                 <picture><img class="hover" src="images/finance.webp" alt="discover" width="400" height="225" loading="lazy"></picture>
                 
                 <div>Financial Services</div>
             </div>
-        </div>
-        
-        <div class="content">
+            <div class="content">
             <picture><img class="hover" src="images/tech.webp" alt="discover" width="400" height="225" loading="lazy"></picture>
             <div>Technology Services</div>
-        </div>
-        <div class="content">
+            </div>
+            <div class="content">
             <picture><img class="hover" src="images/factory.webp" alt="discover" width="400" height="225" loading="lazy"></picture>
             <div>Manufacturing Services</div>
-        </div>
-        <div class="content">
+            </div>
+            <div class="content">
             <picture><img class="hover" src="images/house.webp" alt="discover" width="400" height="225" loading="lazy"></picture>
             <div>Multi-housing Services</div>
-        </div>
-        <div class="content">
+            </div>
+            <div class="content">
             <picture><img class="hover" src="images/industry.webp" alt="discover" width="400" height="225" loading="lazy"></picture>
             <div>Industrial Services</div>
-        </div>
-        <div class="content">
+            </div>
+            <div class="content">
             <picture><img class="hover" src="images/cafe.webp" alt="discover" width="400" height="225" loading="lazy"></picture>
             <div>Restaurant Services</div>
+            </div>
         </div>
 
     <div class="gold"></div>
